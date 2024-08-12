@@ -1,0 +1,21 @@
+main {
+  a: 10;
+}
+main section.visual {
+  a: 10;
+}
+main section.visual div.box {
+  a: 10;
+}
+main section.visual div.box div.videobox {
+  a: 10;
+}
+main section.visual div.box div.videobox video {
+  a: 10;
+}
+main section.visual div.box div.videobox button {
+  a: 10;
+}
+main section.visual div.box div.videobox button img {
+  a: 10;
+}

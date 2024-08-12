@@ -1,0 +1,120 @@
+
+header {
+ width: 100%;
+  height: 100%;
+  max-width: 1840px;
+  position: absolute;
+  top: 0;
+ left: 0;
+ right: 0;
+  margin: 0 auto;
+  z-index:1;
+}
+header div.wrap {
+  border-bottom: 1px solid rgb(255, 254, 254);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr auto  auto;
+  grid-template-rows: auto;  
+  column-gap: 20px;
+}
+header div.wrap .navshow {
+  
+}
+header div.wrap h1 {
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url(../img/lo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 100px;
+  background-size: contain;
+  font-size: 0;
+  margin-left:22px;
+}
+header div.wrap h1 a {
+ display: block;
+}
+header div.wrap nav {  
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-columns: auto auto;
+  display: grid;
+  column-gap: 20px;
+}
+header div.wrap nav ul#gnb.d1 { 
+  display: flex;
+  gap: 0 80px;
+  text-align: center;
+}
+header div.wrap nav ul#gnb.d1 li.sub { 
+  position: relative;
+}
+ header div.wrap nav ul#gnb.d1 li.sub > a {
+ color: #fff;
+ font-weight: bold;
+ font-size: 20px;
+}
+ header div.wrap nav ul#gnb.d1 li.sub ul.d2 {
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 5px 14px rgba(2, 2, 2, 0.5);
+  padding: 0;
+  top:11px;
+  position: absolute;
+  opacity: 0;
+  margin-top: 50px;
+  transform: translateX(-50%);  
+  transition: all 1s;
+  left: 50%;
+}
+header div.wrap nav ul#gnb.d1 li.sub ul.d2:hover {
+  content:"";
+  opacity: 1;
+}
+header div.wrap nav ul#gnb.d1 li.sub ul.d2::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  opacity: 1;
+  transition: all 1s;  
+  background-color: #f39700;
+  left:50%;
+}
+header div.wrap nav ul#gnb.d1 li.sub ul.d2 li.d {
+ width:180px;
+ line-height: 1.1;
+}
+header div.wrap nav ul#gnb.d1 li.sub ul.d2 li.d >a { 
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #000000;
+  padding: 10px 0;
+  transform: translateY(10%);
+  transition: all 1s;
+}
+header div.wrap button.menuButton{ 
+  width: 40px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.wrap button.menuButton span{ 
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.4s 0s;
+}
